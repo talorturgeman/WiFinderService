@@ -28,7 +28,7 @@
      When # in the <version-number> value.
      -->
     <software-default-directory>/boot/wifly/wifly_scripts</software-default-directory>
-    <version-number>5</version-number>
+    <version-number>1</version-number>
     
     <server-url-send-data>http://BLAT/data/v1/sensors/{0}</server-url-send-data>
     <server-url-send-errors>http://BLAT/data/v1/sensors/{0}/errors</server-url-send-errors>
