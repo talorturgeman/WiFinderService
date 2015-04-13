@@ -1,0 +1,6 @@
+c:\users\talor\documents\visual studio 2012\Projects\WiFinderService\WiFinderService\bin\Debug\WiFinderService.dll.config
+c:\users\talor\documents\visual studio 2012\Projects\WiFinderService\WiFinderService\bin\Debug\WiFinderService.dll
+c:\users\talor\documents\visual studio 2012\Projects\WiFinderService\WiFinderService\bin\Debug\WiFinderService.pdb
+c:\users\talor\documents\visual studio 2012\Projects\WiFinderService\WiFinderService\obj\Debug\WiFinderService.dll
+c:\users\talor\documents\visual studio 2012\Projects\WiFinderService\WiFinderService\obj\Debug\WiFinderService.pdb
+c:\users\talor\documents\visual studio 2012\Projects\WiFinderService\WiFinderService\obj\Debug\WiFinderService.csprojResolveAssemblyReference.cache
