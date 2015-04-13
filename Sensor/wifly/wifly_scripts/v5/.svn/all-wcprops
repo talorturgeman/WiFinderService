@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/analoc/!svn/ver/524/NewSensor-Pi/NewSensor-v4/v4
+END
+RemoteControl.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/analoc/!svn/ver/524/NewSensor-Pi/NewSensor-v4/v4/RemoteControl.py
+END
+AnalocUtils.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/analoc/!svn/ver/524/NewSensor-Pi/NewSensor-v4/v4/AnalocUtils.py
+END
+AnalocCommands.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/analoc/!svn/ver/524/NewSensor-Pi/NewSensor-v4/v4/AnalocCommands.py
+END
+AnalocSender.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/analoc/!svn/ver/526/NewSensor-Pi/NewSensor-v4/v4/AnalocSender.py
+END
+dataHandler.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/analoc/!svn/ver/524/NewSensor-Pi/NewSensor-v4/v4/dataHandler.py
+END
+.DS_Store
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/analoc/!svn/ver/524/NewSensor-Pi/NewSensor-v4/v4/.DS_Store
+END

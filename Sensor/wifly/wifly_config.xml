@@ -1,0 +1,67 @@
+<!--
+ #################################################
+ #            Wifly Configuration    		#
+ #################################################
+ #                                               #
+ #  Modify your ident_key and encryption key below  #
+ #                                               #
+ #################################################
+ #################################################
+ #                                               #
+ #  DON'T forget: There are some things defined  #
+ #  in the crontab of the user. You don't need   #
+ #  to touch it.                                 #
+ #                                               #
+ #################################################
+ -->
+
+<configuration-root>
+    <ident_key>00f4b7b9-64c0-46bb-aa87-733be3ff5fd9</ident_key>
+    <encryption-key>24e61e0d591341aa9d86890f56a212bb</encryption-key>
+    
+    <!-- The directory that holds the directory with all of the scripts inside it.
+     Example:
+     <software-default-directory>/boot/wifly_scripts</software-default-directory>
+     The inside of the directory would look like:
+     /boot/wifly_scripts/version#/scripts...
+     
+     When # in the <version-number> value.
+     -->
+    <software-default-directory>/boot/wifly/wifly_scripts</software-default-directory>
+    <version-number>5</version-number>
+    
+    <server-url-send-data>http://BLAT/data/v1/sensors/{0}</server-url-send-data>
+    <server-url-send-errors>http://BLAT/data/v1/sensors/{0}/errors</server-url-send-errors>
+    
+    <kismet-wifly-directory>/var/analoc/kismet</kismet-wifly-directory>
+    <kismet-logs-directory>kismet_logs</kismet-logs-directory>
+    <kismet-backup-logs-directory>kismet_backups</kismet-backup-logs-directory>
+    <error-log-file-path>/var/analoc/Wifly.log</error-log-file-path>
+    <min-error-level-to-log>10</min-error-level-to-log>
+    
+    <!-- The curl agent username -->
+    <curl-user-agent>WiflySender-curl</curl-user-agent>
+    
+    <!-- A time out for connection after it has been established -->
+    <curl-connection-timeout>30</curl-connection-timeout>
+    
+    <!-- A time out for trying to create a connection -->
+    <curl-timeout>30</curl-timeout>
+    
+    <!-- Usb modem configuration -->
+    <usbmodem-apn></usbmodem-apn>
+    <usbmodem-apn-user></usbmodem-apn-user>
+    <usbmodem-apn-password></usbmodem-apn-password>
+    
+    <!-- The number of times we allow kismet not to log before we restart it -->
+    <failure-kismet-not-logging-max-times>6</failure-kismet-not-logging-max-times>
+    
+    <!-- The number of times we allow for internet failure (not timeout) before we restart it -->
+    <failure-internet-connection-max-times>6</failure-internet-connection-max-times>
+    
+    <!-- The oath of the file we saves the number of times in a raw that kismet didn't log anything -->
+    <failure-times-file-path>/var/analoc/WiflyCurrentFailures.xml</failure-times-file-path>
+    
+    <min-free-space-kb>50</min-free-space-kb>
+    <wifi-monitor-adapter-preferred-mac-address></wifi-monitor-adapter-preferred-mac-address>
+</configuration-root>
