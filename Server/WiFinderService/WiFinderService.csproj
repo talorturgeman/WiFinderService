@@ -58,6 +58,7 @@
     <Compile Include="PostSensorsData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GetLocation.cs" />
+    <Compile Include="TestClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

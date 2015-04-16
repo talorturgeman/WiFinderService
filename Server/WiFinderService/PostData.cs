@@ -30,8 +30,10 @@ namespace WiFinderService
         {
             StreamReader reader = new StreamReader(body);
             String res = reader.ReadToEnd();
+            string json = PostLocationsRequest.Parse(res);
 
-            PostLocationsRequest.Parse(res);
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+            PostLocationsRequest collection = serializer.Deserialize<PostLocationsRequest>(json);
 
             return new PostDataResponse(true);
         }

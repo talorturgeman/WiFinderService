@@ -10,7 +10,7 @@ using WiFinderServer.models;
 namespace WiFinderService
 {
     [ServiceContract]
-    class PostSensorsData
+    public class PostSensorsData
     {
         [WebInvoke(Method = "POST",
             ResponseFormat = WebMessageFormat.Json,

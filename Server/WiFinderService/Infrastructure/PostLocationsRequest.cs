@@ -26,22 +26,16 @@ namespace WiFinderService.Infrastructure
             return true;
         }
 
-        public static void Parse(string body)
+        public static string Parse(string body)
         {
-            /*
-            string key = "24e61e0d591341aa9d86890f56a212bb";
-            byte[] keyarr = Encoding.UTF8.GetBytes(key);
-            byte[] result = EncryptStringToBytes(body, keyarr);
-            string str = Convert.ToBase64String(result);
-            */
-            string key = "24e61e0d591341aa9d86890f56a212bb";
             string stage3 = body.Substring(9);
-            Byte[] stage2 = Convert.FromBase64String(stage3);
-            byte[] keyarr = Encoding.UTF8.GetBytes(key);
-           // Array.Resize(ref keyarr, 32);
-            byte[] iv = new byte[32];
-            string stage1try = DecryptRJ256(stage2, key);
-            string stage1 = DecryptStringFromBytes(stage2, keyarr, iv);
+
+            // todo: improve code
+            stage3.Replace('-', '+');
+            stage3.Replace('_', '/');
+            stage3.Replace('.', '=');
+
+            return Encoding.UTF8.GetString(Convert.FromBase64String(stage3));
         }
 
         static string DecryptStringFromBytes(byte[] cipherText, byte[] key, byte[] iv)
@@ -71,49 +65,6 @@ namespace WiFinderService.Infrastructure
                 }
             }
             return plainText;
-        }
-
-        static byte[] GetBytes(string str)
-        {
-            byte[] bytes = new byte[str.Length * sizeof(char)];
-            bytes = Encoding.ASCII.GetBytes(str);
-            Convert.ToBase64String(bytes);
-            //System.Buffer.BlockCopy(str.ToCharArray(), 0, bytes, 0, bytes.Length);
-            return bytes;
-        }
-
-        static public String DecryptRJ256(byte[] cypher, string KeyString)
-        {
-            var sRet = "";
-
-            var encoding = new UTF8Encoding();
-            var Key = encoding.GetBytes(KeyString);
-
-            using (var rj = new RijndaelManaged())
-            {
-                try
-                {
-                    rj.Padding = PaddingMode.PKCS7;
-                    rj.Mode = CipherMode.ECB;
-                    rj.BlockSize = 256;
-                    rj.Key = Key;
-                    var ms = new MemoryStream(cypher);
-
-                    using (var cs = new CryptoStream(ms, rj.CreateDecryptor(Key, rj.IV), CryptoStreamMode.Read))
-                    {
-                        using (var sr = new StreamReader(cs))
-                        {
-                            sRet = sr.ReadLine();
-                        }
-                    }
-                }
-                finally
-                {
-                    rj.Clear();
-                }
-            }
-
-            return sRet;
         }
     }
 }
