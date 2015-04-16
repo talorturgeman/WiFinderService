@@ -175,6 +175,8 @@ def sendData(lstData, fileNameToDelete, url):
         returnValue = False
     else:
         identKey = WiflyUtils.readConfigValue('ident_key')
+        identKeyEncoded = identKey.encode('base64')
+        identKeyEncoded = urllib.quote(identKeyEncoded)
         url = url.format(identKey)
         encryptionKey = WiflyUtils.readConfigValue('encryption-key')
         
