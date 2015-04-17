@@ -17,8 +17,8 @@ import netifaces
 import datetime
 import shutil
 
-#config_path = "/Users/Or/Desktop/wifly_config.xml"
-config_path = "/boot/wifly/wifly_config.xml"
+#config_path = "/Users/orkazaz/Developments/WiFinderService/Sensor/analoc/wifly_config.xml"
+config_path = "/boot/analoc/wifly_config.xml"
 threadLocker = threading.Lock()
 defaultWifiNetworkInterface = 'wlan0'
 secondaryWifiNetworkInterface = 'wlan1'

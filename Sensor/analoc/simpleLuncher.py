@@ -9,8 +9,8 @@ import urllib2
 import time
 
 
-#config_path = "/Users/Or/Google Drive/raspberry-pi/PythonScripts/wifly_config.xml"
-config_path = "/boot/wifly/wifly_config.xml"
+#config_path = "/Users/orkazaz/Developments/WiFinderService/Sensor/analoc/wifly_config.xml"
+config_path = "/boot/analoc/wifly_config.xml"
 dataHandlerFileName = 'dataHandler.py'
 WiflyUtilsFileName = 'WiflyUtils.py'
 WiflyCommandsFileName = 'WiflyCommands.py'

@@ -72,8 +72,8 @@ def encryptData(dataToEncrypt, key):
         return None
     else:
         try:
-            mc = mcrypt.MCRYPT('rijndael-256', 'ecb')
-            mc.init(key)
+            #mc = mcrypt.MCRYPT('rijndael-256', 'ecb')
+            #mc.init(key)
             #encrypted_data = mc.encrypt(dataToEncrypt)
             #encrypted_data = encrypted_data.strip()
             encrypted_data = dataToEncrypt
@@ -90,7 +90,7 @@ def encryptData(dataToEncrypt, key):
         else:
             return encrypted_data
 
-def __sendDataGeneral(identKey, dArrayData, url, encryptionKey):
+def __sendDataGeneral(dArrayData, url, encryptionKey):
     # Transforms the data to json
     json_to_send = json.dumps(dArrayData, separators=(',',':'), sort_keys=False)
 
@@ -110,7 +110,7 @@ def __sendDataGeneral(identKey, dArrayData, url, encryptionKey):
         curlClient.setopt(curlClient.POST, True)
            
         # Sets the params of the post request
-        send_params = 'ident_key=' + identKey + '&enc_data=' + urllib.quote(encrypted_json_to_send)
+        send_params = 'enc_data=' + urllib.quote(encrypted_json_to_send)
         curlClient.setopt(curlClient.POSTFIELDS, send_params)
         
         # Setting the buffer for the response to be written to
@@ -177,7 +177,7 @@ def sendData(lstData, fileNameToDelete, url):
         identKey = WiflyUtils.readConfigValue('ident_key')
         identKeyEncoded = identKey.encode('base64')
         identKeyEncoded = urllib.quote(identKeyEncoded)
-        url = url.format(identKey)
+        url = url.format(identKeyEncoded)
         encryptionKey = WiflyUtils.readConfigValue('encryption-key')
         
         # Sets all the data to be sent
@@ -185,7 +185,7 @@ def sendData(lstData, fileNameToDelete, url):
         dArrayData['ident_key'] = identKey
         dArrayData['data'] = lstData
 
-        responseDictionary = __sendDataGeneral(identKey, dArrayData, url, encryptionKey)
+        responseDictionary = __sendDataGeneral(dArrayData, url, encryptionKey)
         
         # Checks if every thing went well
         if (responseDictionary is None):

@@ -10,6 +10,7 @@ import logging
 import datetime
 import sys
 from dateutil import parser
+import calendar
 
 nthreadCounter = 1
 lstThreads = []
@@ -305,7 +306,7 @@ def main():
                                 dClientData['mac'] = clientMacAddress
                                 dClientData['bssid'] = bssid
                                 dClientData['power'] = lastSignleDbm
-                                dClientData['timestamp'] = lastTimeSeen
+                                dClientData['timestamp'] = calendar.timegm(lastTimeSeen.utctimetuple())
                                 lstData.append(dClientData)
                     
                     # Checks if we need to send new data

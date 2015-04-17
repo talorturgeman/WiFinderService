@@ -1,6 +1,6 @@
 <!--
  #################################################
- #            Wifly Configuration    		#
+ #            Wifly Configuration           #
  #################################################
  #                                               #
  #  Modify your ident_key and encryption key below  #
@@ -27,11 +27,11 @@
      
      When # in the <version-number> value.
      -->
-    <software-default-directory>/boot/wifly/wifly_scripts</software-default-directory>
+    <software-default-directory>/boot/analoc/wifly_scripts</software-default-directory>
     <version-number>1</version-number>
     
-    <server-url-send-data>http://BLAT/data/v1/sensors/{0}</server-url-send-data>
-    <server-url-send-errors>http://BLAT/data/v1/sensors/{0}/errors</server-url-send-errors>
+    <server-url-send-data>https://wifinder2.azurewebsites.net/v1/sensors/{0}</server-url-send-data>
+    <server-url-send-errors>https://wifinder2.azurewebsites.net/v1/sensors/{0}/errors</server-url-send-errors>
     
     <kismet-wifly-directory>/var/analoc/kismet</kismet-wifly-directory>
     <kismet-logs-directory>kismet_logs</kismet-logs-directory>
@@ -43,10 +43,10 @@
     <curl-user-agent>WiflySender-curl</curl-user-agent>
     
     <!-- A time out for connection after it has been established -->
-    <curl-connection-timeout>30</curl-connection-timeout>
+    <curl-connection-timeout>40</curl-connection-timeout>
     
     <!-- A time out for trying to create a connection -->
-    <curl-timeout>30</curl-timeout>
+    <curl-timeout>40</curl-timeout>
     
     <!-- Usb modem configuration -->
     <usbmodem-apn></usbmodem-apn>
