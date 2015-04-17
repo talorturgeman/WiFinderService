@@ -1,0 +1,3455 @@
+{
+	"version": 1,
+	"collections": [
+		{
+			"id": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+			"name": "Wifly",
+			"description": "",
+			"order": [
+				"f79552c0-529d-843a-c3a6-99b4792bfcc3"
+			],
+			"folders": [
+				{
+					"id": "7f656ee8-3abc-c34b-7c62-73d66c2ca2c6",
+					"name": "Data",
+					"description": "",
+					"write": true,
+					"order": [
+						"fec7ead4-252f-14cd-0851-be87ca4ba2a4",
+						"e3e6e914-dd4a-91eb-31db-763f16c9e0e6",
+						"29f37a99-8f48-62aa-0877-48477ad65fd6"
+					],
+					"collection_name": "Wifly",
+					"collection_owner": "26101",
+					"collection_id": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"collection": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"owner": "26101"
+				},
+				{
+					"id": "32d688bc-36c4-45d6-9505-795c7687f965",
+					"name": "Errors",
+					"description": "",
+					"write": true,
+					"order": [
+						"e8f4f6a3-cc20-b99a-1454-e72848c7ef1a",
+						"5fa6ba3e-14f4-ec15-34c9-e551bd534ac0",
+						"9cc26f1c-9128-6dc1-16dd-5f28d97ae899"
+					],
+					"collection_name": "Wifly",
+					"collection_owner": "26101",
+					"collection_id": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"collection": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"owner": "26101"
+				}
+			],
+			"timestamp": 1429274264337,
+			"synced": false,
+			"remote_id": 0,
+			"owner": "26101",
+			"sharedWithTeam": false,
+			"subscribed": false,
+			"remoteLink": "",
+			"public": false,
+			"write": true,
+			"requests": [
+				{
+					"id": "29f37a99-8f48-62aa-0877-48477ad65fd6",
+					"headers": "",
+					"url": "{{SERVER}}/api/Sensors/{{IDENT_KEY}}",
+					"preRequestScript": "",
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "enc_data",
+							"value": "ew0KICAiaWRlbnRfa2V5IjogIjAwZjRiN2I5LTY0YzAtNDZiYi1hYTg3LTczM2JlM2ZmNWZkOSIsDQogICJkYXRhIjogWw0KICAgIHsNCiAgICAgICJtYWMiOiAiMDAtMTUtRTktMkItOTktM0MiLA0KICAgICAgImJzc2lkIjogIkthemF6IFJvdXRlciIsDQogICAgICAicG93ZXIiOiAiLTY3IiwNCiAgICAgICJ0aW1lc3RhbXAiOiAiMjAxMC0wMy0wOCAxNDo1OTozMC4yNTIiDQogICAgfSwNCiAgICB7DQogICAgICAibWFjIjogIjAxLTE1LUY4LTJCLTk5LTZHIiwNCiAgICAgICJic3NpZCI6ICJIZXJtb24gUm91dGVyIiwNCiAgICAgICJwb3dlciI6ICItOTAiLA0KICAgICAgInRpbWVzdGFtcCI6ICIyMDEyLTEyLTI2IDE0OjU5OjMwLjI1MiINCiAgICB9DQogIF0NCn0%3D",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "urlencoded",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1429276241576,
+					"name": "Data - Send Sensor Data",
+					"description": "",
+					"collectionId": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"responses": []
+				},
+				{
+					"id": "5fa6ba3e-14f4-ec15-34c9-e551bd534ac0",
+					"headers": "",
+					"url": "{{SERVER}}/api/Sensors/Errors/{{ERROR_ID}}",
+					"preRequestScript": "",
+					"pathVariables": {},
+					"method": "GET",
+					"data": [],
+					"dataMode": "params",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1429275797576,
+					"name": "Data - Get error by id",
+					"description": "",
+					"collectionId": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"responses": []
+				},
+				{
+					"id": "9cc26f1c-9128-6dc1-16dd-5f28d97ae899",
+					"headers": "",
+					"url": "{{SERVER}}/api/Sensors/{{IDENT_KEY}}/Errors",
+					"preRequestScript": "",
+					"pathVariables": {},
+					"method": "POST",
+					"data": [
+						{
+							"key": "enc_data",
+							"value": "ew0KICAiaWRlbnRfa2V5IjogIjAwZjRiN2I5LTY0YzAtNDZiYi1hYTg3LTczM2JlM2ZmNWZkOSIsDQogICJkYXRhIjogWw0KICAgIHsNCiAgICAgICJlcnJvckxldmVsIjogNDAsDQogICAgICAibW9kdWxlIjogIlNlbmRlciwgTGluZTogMTgiLA0KICAgICAgIm1lc3NhZ2UiOiAiVW5hYmxlIHRvIG9wZW4gYSBuZXR3b3JrIHNvY2tldCINCiAgICB9LA0KICAgIHsNCiAgICAgICJlcnJvckxldmVsIjogNTAsDQogICAgICAibW9kdWxlIjogIlNlbmRlciwgTGluZTogMzAiLA0KICAgICAgIm1lc3NhZ2UiOiAiTm90IEF1dGhvcml6ZWQiDQogICAgfQ0KICBdDQp9",
+							"type": "text",
+							"enabled": true
+						}
+					],
+					"dataMode": "urlencoded",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1429276240026,
+					"name": "Data - Send Sensor errors",
+					"description": "",
+					"collectionId": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"responses": []
+				},
+				{
+					"id": "e3e6e914-dd4a-91eb-31db-763f16c9e0e6",
+					"headers": "",
+					"url": "{{SERVER}}/api/Sensors/Data/{{DATA_ID}}",
+					"preRequestScript": "",
+					"pathVariables": {},
+					"method": "GET",
+					"data": [],
+					"dataMode": "params",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1429275776018,
+					"name": "Data - Get data by id",
+					"description": "",
+					"collectionId": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"responses": []
+				},
+				{
+					"id": "e8f4f6a3-cc20-b99a-1454-e72848c7ef1a",
+					"headers": "",
+					"url": "{{SERVER}}/api/Sensors/Errors",
+					"preRequestScript": "",
+					"pathVariables": {},
+					"method": "GET",
+					"data": [],
+					"dataMode": "params",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1429274426326,
+					"name": "Data - Get All Sensor's errors",
+					"description": "",
+					"collectionId": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"responses": [],
+					"synced": true,
+					"folder": "32d688bc-36c4-45d6-9505-795c7687f965"
+				},
+				{
+					"id": "f79552c0-529d-843a-c3a6-99b4792bfcc3",
+					"headers": "",
+					"url": "{{SERVER}}/api/SensorServices/DeleteAll",
+					"preRequestScript": "",
+					"pathVariables": {},
+					"method": "DELETE",
+					"data": [],
+					"dataMode": "urlencoded",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1429275110373,
+					"name": "All - Delete all (errors + data)",
+					"description": "",
+					"collectionId": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"responses": []
+				},
+				{
+					"id": "fec7ead4-252f-14cd-0851-be87ca4ba2a4",
+					"headers": "",
+					"url": "{{SERVER}}/api/Sensors/Data",
+					"preRequestScript": "",
+					"pathVariables": {},
+					"method": "GET",
+					"data": [],
+					"dataMode": "params",
+					"version": 2,
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {},
+					"time": 1429274410147,
+					"name": "Data - Get All Sensor's data",
+					"description": "",
+					"collectionId": "0f5361e8-85e7-ce31-23e4-fcb24a5b1a9f",
+					"responses": [],
+					"synced": true,
+					"folder": "7f656ee8-3abc-c34b-7c62-73d66c2ca2c6"
+				}
+			]
+		}
+	],
+	"environments": [
+		{
+			"id": "9b71f48b-407d-26fd-0074-f49202db5f63",
+			"name": "WiFly",
+			"values": [
+				{
+					"key": "SERVER",
+					"value": "https://wifinder2.azurewebsites.net",
+					"type": "text",
+					"name": "SERVER",
+					"enabled": true
+				},
+				{
+					"key": "IDENT_KEY",
+					"value": "MDBmNGI3YjktNjRjMC00NmJiLWFhODctNzMzYmUzZmY1ZmQ5",
+					"type": "text",
+					"name": "IDENT_KEY",
+					"enabled": true
+				},
+				{
+					"key": "DATA_ID",
+					"value": "88888888888888888888888888888888",
+					"type": "text",
+					"name": "DATA_ID",
+					"enabled": true
+				},
+				{
+					"key": "ERROR_ID",
+					"value": "99999999999999999999999999999999",
+					"type": "text",
+					"name": "ERROR_ID",
+					"enabled": true
+				}
+			],
+			"timestamp": 1429275805051
+		}
+	],
+	"headerPresets": [],
+	"globals": [
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V2",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V3",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "AYELET_USER",
+			"value": "ayelet.liberman@autodesk.com",
+			"type": "text",
+			"name": "AYELET_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V2",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V3",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "AYELET_USER",
+			"value": "ayelet.liberman@autodesk.com",
+			"type": "text",
+			"name": "AYELET_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V2",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V2",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V3",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "AYELET_USER",
+			"value": "ayelet.liberman@autodesk.com",
+			"type": "text",
+			"name": "AYELET_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V2",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V3",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "AYELET_USER",
+			"value": "ayelet.liberman@autodesk.com",
+			"type": "text",
+			"name": "AYELET_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V2",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V3",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "AYELET_USER",
+			"value": "ayelet.liberman@autodesk.com",
+			"type": "text",
+			"name": "AYELET_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V2",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AYELET_USER",
+			"value": "ayelet.liberman@autodesk.com",
+			"type": "text",
+			"name": "AYELET_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V3",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "AYELET_USER",
+			"value": "ayelet.liberman@autodesk.com",
+			"type": "text",
+			"name": "AYELET_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V2",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AYELET_USER",
+			"value": "ayelet.liberman@autodesk.com",
+			"type": "text",
+			"name": "AYELET_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V3",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		},
+		{
+			"key": "AYELET_USER",
+			"value": "ayelet.liberman@autodesk.com",
+			"type": "text",
+			"name": "AYELET_USER",
+			"enabled": true
+		},
+		{
+			"key": "VER",
+			"value": "v1",
+			"type": "text",
+			"name": "VER",
+			"enabled": true
+		},
+		{
+			"key": "APP_VERSION",
+			"value": "1.1",
+			"type": "text",
+			"name": "APP_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "APP_TOKEN",
+			"value": "1",
+			"type": "text",
+			"name": "APP_TOKEN",
+			"enabled": true
+		},
+		{
+			"key": "LANG",
+			"value": "en-US",
+			"type": "text",
+			"name": "LANG",
+			"enabled": true
+		},
+		{
+			"key": "JSON",
+			"value": "application/json",
+			"type": "text",
+			"name": "JSON",
+			"enabled": true
+		},
+		{
+			"key": "TIMESTAMP",
+			"value": "1494554824000",
+			"type": "text",
+			"name": "TIMESTAMP",
+			"enabled": true
+		},
+		{
+			"key": "CONSUMER_KEY",
+			"value": "Autodesk360Mobile",
+			"type": "text",
+			"name": "CONSUMER_KEY",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_VERSION",
+			"value": "V2",
+			"type": "text",
+			"name": "AUTH_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "SERVER_VERSION",
+			"value": "0.2",
+			"type": "text",
+			"name": "SERVER_VERSION",
+			"enabled": true
+		},
+		{
+			"key": "TOM_STAGING",
+			"value": "22e434e2-efea-4305-9128-76903c35c75a",
+			"type": "text",
+			"name": "TOM_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_STAGING",
+			"value": "6a53aa43-c176-4857-91de-eb313c5ae918",
+			"type": "text",
+			"name": "YIFTACH_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT",
+			"value": "AppToken 0e0e22348a1f0f16cc0672bd42f6effb13af3fb0ee90ba50e560cd27853cb476",
+			"type": "text",
+			"name": "AUTH_ACCOUNT",
+			"enabled": true
+		},
+		{
+			"key": "AUTH_ACCOUNT_GET",
+			"value": "AppToken 4015da521f6f8f700abc1fde5bed85e541b512b715876be6d83858173b307f16",
+			"type": "text",
+			"name": "AUTH_ACCOUNT_GET",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_USER",
+			"value": "yiftach.ringel@autodesk.com",
+			"type": "text",
+			"name": "YIFTACH_USER",
+			"enabled": true
+		},
+		{
+			"key": "YIFTACH_PASS",
+			"value": "ftrHK5C6UPhamEanRCRcOBF/Fk+l+tlKbCvMqxsUSTRcrkVzE58FHmH0QCHHvim8B4ZO2cMlCefxsqQXU9g65A==",
+			"type": "text",
+			"name": "YIFTACH_PASS",
+			"enabled": true
+		},
+		{
+			"key": "TOM_USER",
+			"value": "tom.winter@autodesk.com",
+			"type": "text",
+			"name": "TOM_USER",
+			"enabled": true
+		},
+		{
+			"key": "TOM_PASS",
+			"value": "Hzsyq64j6KjQeEaKaeD5B9UdL/zJTf8kUS8eJizdvz5xomQt6JgblGhFjYEFBGXhcVedYH2xw4VPUNhxOD1zaw==",
+			"type": "text",
+			"name": "TOM_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_USER",
+			"value": "avel.horwitz@autodesk.com",
+			"type": "text",
+			"name": "AVEL_USER",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_PASS",
+			"value": "OlsiqHDoXq04p05rqbDR88TCnSXl0quCyvTK/FsvagckoDDzok7ZdilqhNUBcIpqyzWbRqkTV2zLOu8lyK+CsQ==",
+			"type": "text",
+			"name": "AVEL_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AVEL_STAGING",
+			"value": "6805e510-d568-471f-9693-3055d999c25a",
+			"type": "text",
+			"name": "AVEL_STAGING",
+			"enabled": true
+		},
+		{
+			"key": "RONI_USER",
+			"value": "roni.leibovits@autodesk.com",
+			"type": "text",
+			"name": "RONI_USER",
+			"enabled": true
+		},
+		{
+			"key": "HTML_CONTENT",
+			"value": "true",
+			"type": "text",
+			"name": "HTML_CONTENT",
+			"enabled": true
+		},
+		{
+			"key": "KAZAZ_USER",
+			"value": "or.kazaz@autodesk.com",
+			"type": "text",
+			"name": "KAZAZ_USER",
+			"enabled": true
+		},
+		{
+			"key": "HEMI_USER",
+			"value": "hemi.mansharoff@autodesk.com",
+			"type": "text",
+			"name": "HEMI_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_PASS",
+			"value": "NbZCO+qVJSk0TwOqYwehwzSAEL6dOWj+Y7AfwI3ywG1gFNBEm79mCvIP3OQQo0Pr5snBXPW+VRNPol12QxVd5g==",
+			"type": "text",
+			"name": "ROEI_PASS",
+			"enabled": true
+		},
+		{
+			"key": "AYELET_USER",
+			"value": "ayelet.liberman@autodesk.com",
+			"type": "text",
+			"name": "AYELET_USER",
+			"enabled": true
+		},
+		{
+			"key": "ROEI_USER",
+			"value": "roei.oved@autodesk.com",
+			"type": "text",
+			"name": "ROEI_USER",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_PASS",
+			"value": "UAyzLiLgdBBLQZlFpiMz8IfQwSpo1Yc5l+sxSQMDj0/EHGnAV+EciXJoGFyLNzZ+yv7nbt3R4BXuZyBEj+4aYQ==",
+			"type": "text",
+			"name": "WIP1FQA_PASS",
+			"enabled": true
+		},
+		{
+			"key": "WIP1FQA_USER",
+			"value": "wip1fqa30@gmail.com",
+			"type": "text",
+			"name": "WIP1FQA_USER",
+			"enabled": true
+		}
+	]
+}
