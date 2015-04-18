@@ -77,7 +77,7 @@ def encryptData(dataToEncrypt, key):
             #encrypted_data = mc.encrypt(dataToEncrypt)
             #encrypted_data = encrypted_data.strip()
             encrypted_data = dataToEncrypt
-            encrypted_data = encrypted_data.encode('base64')
+            encrypted_data = encrypted_data.encode('base64').strip()
             #dicReplaceChars = {
              #                    '+' : '-',
               #                   '/' : '_',
@@ -156,6 +156,7 @@ def __sendDataGeneral(dArrayData, url, encryptionKey):
 def encodeIdentKey(identKeyToEncode):
     try:
         identKeyEncoded = identKeyToEncode.encode('base64')
+        identKeyEncoded = identKeyEncoded.strip()
         identKeyEncoded = urllib.quote(identKeyEncoded)
         dicReplaceChars = {
                              '+' : '-',
@@ -167,7 +168,7 @@ def encodeIdentKey(identKeyToEncode):
         WiflyUtils.writeLog(logging.ERROR, 'WiflySender-encodeIdentKey', 'Line: ' + str(WiflyUtils.lineno()) + '. Could not encode the ident_key: ' + identKeyToEncode + '. Error: ' + str(err))
         return None
     else:
-        return identKeyEncoded
+        return identKeyEncoded.strip()
 
 #=======================================================================================
 # Method Description: The method sends the data to the server
