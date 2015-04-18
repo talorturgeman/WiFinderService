@@ -228,7 +228,7 @@
 				},
 				{
 					"key": "IDENT_KEY",
-					"value": "MDBmNGI3YjktNjRjMC00NmJiLWFhODctNzMzYmUzZmY1ZmQ5",
+					"value": "MDBmNGI3YjktNjRjMC00NmJiLWFhODctNzMzYmUzZmY1ZmQ5%0A",
 					"type": "text",
 					"name": "IDENT_KEY",
 					"enabled": true
@@ -248,7 +248,7 @@
 					"enabled": true
 				}
 			],
-			"timestamp": 1429352102885
+			"timestamp": 1429352897956
 		}
 	],
 	"headerPresets": [],
