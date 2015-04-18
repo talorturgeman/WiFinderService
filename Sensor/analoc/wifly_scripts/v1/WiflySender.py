@@ -37,12 +37,12 @@ def decryptData(dataToDecrypt, key):
         WiflyUtils.writeLog(logging.ERROR, 'WiflySender-decryptData', 'Line: ' + str(WiflyUtils.lineno()) + '. Could not encrypt the data. Expected key length is: ' + str(encryptionKeyExpectedSize) + ' But the key is: ' + str(len(key)))
         return None
     else:
-        dicReplaceChars = {
-                         '-' : '+',
-                         '_' : '/',
-                         '.' : '=',
-                      }
-        decryptedData = WiflyUtils.multiple_replace(dicReplaceChars, dataToDecrypt)
+       # dicReplaceChars = {
+        #                 '-' : '+',
+         #                '_' : '/',
+          #               '.' : '=',
+           #           }
+        #decryptedData = WiflyUtils.multiple_replace(dicReplaceChars, dataToDecrypt)
         
         try:
             decryptedData = decryptedData.decode('base64')
@@ -78,12 +78,12 @@ def encryptData(dataToEncrypt, key):
             #encrypted_data = encrypted_data.strip()
             encrypted_data = dataToEncrypt
             encrypted_data = encrypted_data.encode('base64')
-            dicReplaceChars = {
-                                 '+' : '-',
-                                 '/' : '_',
-                                 '=' : '.',
-                              }
-            encrypted_data = WiflyUtils.multiple_replace(dicReplaceChars, encrypted_data)
+            #dicReplaceChars = {
+             #                    '+' : '-',
+              #                   '/' : '_',
+               #                  '=' : '.',
+                #              }
+            #encrypted_data = WiflyUtils.multiple_replace(dicReplaceChars, encrypted_data)
         except BaseException as err:
             WiflyUtils.writeLog(logging.ERROR, 'WiflySender-encryptData', 'Line: ' + str(WiflyUtils.lineno()) + '. Could not encrypt the data. Error: ' + str(err))
             return None
@@ -153,6 +153,17 @@ def __sendDataGeneral(dArrayData, url, encryptionKey):
             curlClient.close()
             bufResponse.close()
 
+def encodeIdentKey(identKeyToEncode):
+    identKeyEncoded = identKey.encode('base64')
+    identKeyEncoded = urllib.quote(identKeyEncoded)
+    dicReplaceChars = {
+                         '+' : '-',
+                         '/' : '_',
+                         '=' : '.',
+                      }
+    identKeyEncoded = WiflyUtils.multiple_replace(dicReplaceChars, identKeyEncoded)
+    return identKeyEncoded
+
 #=======================================================================================
 # Method Description: The method sends the data to the server
 # Parameters:   lstData = the data to send
@@ -175,8 +186,7 @@ def sendData(lstData, fileNameToDelete, url):
         returnValue = False
     else:
         identKey = WiflyUtils.readConfigValue('ident_key')
-        identKeyEncoded = identKey.encode('base64')
-        identKeyEncoded = urllib.quote(identKeyEncoded)
+        identKeyEncoded = encodeIdentKey(identKey)
         url = url.format(identKeyEncoded)
         encryptionKey = WiflyUtils.readConfigValue('encryption-key')
         
