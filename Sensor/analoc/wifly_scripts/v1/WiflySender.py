@@ -154,15 +154,20 @@ def __sendDataGeneral(dArrayData, url, encryptionKey):
             bufResponse.close()
 
 def encodeIdentKey(identKeyToEncode):
-    identKeyEncoded = identKey.encode('base64')
-    identKeyEncoded = urllib.quote(identKeyEncoded)
-    dicReplaceChars = {
-                         '+' : '-',
-                         '/' : '_',
-                         '=' : '.',
-                      }
-    identKeyEncoded = WiflyUtils.multiple_replace(dicReplaceChars, identKeyEncoded)
-    return identKeyEncoded
+    try:
+        identKeyEncoded = identKey.encode('base64')
+        identKeyEncoded = urllib.quote(identKeyEncoded)
+        dicReplaceChars = {
+                             '+' : '-',
+                             '/' : '_',
+                             '=' : '.',
+                          }
+        identKeyEncoded = WiflyUtils.multiple_replace(dicReplaceChars, identKeyEncoded)
+    except BaseException as err:
+        WiflyUtils.writeLog(logging.ERROR, 'WiflySender-encodeIdentKey', 'Line: ' + str(WiflyUtils.lineno()) + '. Could not encode the ident_key: ' + identKeyToEncode + '. Error: ' + str(err))
+        return None
+    else:
+        return identKeyEncoded
 
 #=======================================================================================
 # Method Description: The method sends the data to the server
