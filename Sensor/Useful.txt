@@ -1,0 +1,5 @@
+# Connect to the pi
+sudo ssh -o PubkeyAuthentication=no pi@10.0.0.6
+
+# Copy a folder to the pi
+scp -o PubkeyAuthentication=no -r "/Users/orkazaz/Developments/WiFinderService/Sensor/analoc" pi@10.0.0.6:/home/pi/analoc/

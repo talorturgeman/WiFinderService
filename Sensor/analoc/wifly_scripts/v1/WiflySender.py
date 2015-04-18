@@ -155,7 +155,7 @@ def __sendDataGeneral(dArrayData, url, encryptionKey):
 
 def encodeIdentKey(identKeyToEncode):
     try:
-        identKeyEncoded = identKey.encode('base64')
+        identKeyEncoded = identKeyToEncode.encode('base64')
         identKeyEncoded = urllib.quote(identKeyEncoded)
         dicReplaceChars = {
                              '+' : '-',
@@ -192,35 +192,39 @@ def sendData(lstData, fileNameToDelete, url):
     else:
         identKey = WiflyUtils.readConfigValue('ident_key')
         identKeyEncoded = encodeIdentKey(identKey)
-        url = url.format(identKeyEncoded)
-        encryptionKey = WiflyUtils.readConfigValue('encryption-key')
-        
-        # Sets all the data to be sent
-        dArrayData = {}
-        dArrayData['ident_key'] = identKey
-        dArrayData['data'] = lstData
 
-        responseDictionary = __sendDataGeneral(dArrayData, url, encryptionKey)
-        
-        # Checks if every thing went well
-        if (responseDictionary is None):
+        if (identKeyEncoded is None):
             returnValue = False
-            print '\n#############################'
-            print 'Data DIDN\'T send well:'
-            print '###############################'
-        else:
-            if (not bool(responseDictionary['success'])):
-                WiflyUtils.writeLog(logging.WARNING, 'WiflySender-sendData', 'Line: ' + str(WiflyUtils.lineno()) + \
-                                     '. Error sending data to server. Error code: ' + str(responseDictionary['data']['errorCode']) + '. Error message: ' + str(responseDictionary['data']['developersMessage']))
+        else: 
+            url = url.format(identKeyEncoded)
+            encryptionKey = WiflyUtils.readConfigValue('encryption-key')
+            
+            # Sets all the data to be sent
+            dArrayData = {}
+            dArrayData['ident_key'] = identKey
+            dArrayData['data'] = lstData
+
+            responseDictionary = __sendDataGeneral(dArrayData, url, encryptionKey)
+            
+            # Checks if every thing went well
+            if (responseDictionary is None):
                 returnValue = False
                 print '\n#############################'
                 print 'Data DIDN\'T send well:'
                 print '###############################'
             else:
-                print '\n#############################'
-                print 'Data sent well'
-                print '###############################'
-                if (fileNameToDelete != ''):
-                    WiflyUtils.deleteFile('WiflySender-sendData', fileNameToDelete)
+                if (not bool(responseDictionary['success'])):
+                    WiflyUtils.writeLog(logging.WARNING, 'WiflySender-sendData', 'Line: ' + str(WiflyUtils.lineno()) + \
+                                         '. Error sending data to server. Error code: ' + str(responseDictionary['data']['errorCode']) + '. Error message: ' + str(responseDictionary['data']['developersMessage']))
+                    returnValue = False
+                    print '\n#############################'
+                    print 'Data DIDN\'T send well:'
+                    print '###############################'
+                else:
+                    print '\n#############################'
+                    print 'Data sent well'
+                    print '###############################'
+                    if (fileNameToDelete != ''):
+                        WiflyUtils.deleteFile('WiflySender-sendData', fileNameToDelete)
             
     return returnValue
