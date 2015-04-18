@@ -16,6 +16,7 @@ import pylibmc
 import netifaces
 import datetime
 import shutil
+import calendar
 
 #config_path = "/Users/orkazaz/Developments/WiFinderService/Sensor/analoc/wifly_config.xml"
 config_path = "/boot/analoc/wifly_config.xml"
@@ -88,22 +89,22 @@ def writeLog(errorLevel, moduleName, message):
         if (PATH.exists(logFilePath) and (PATH.getsize(logFilePath) / 1024 / 1024 >= 50.0)):
             deleteFile('WiflyUtils', logFilePath)
             
-        logging.basicConfig(filename=logFilePath, format='timestamp$$%(asctime)s~~%(message)s', level=logging.DEBUG, datefmt='%Y-%m-%d %H:%M:%S')
-        messageFormat = 'errorlevel$$%s~~module$$%s~~message$$%s'
+        logging.basicConfig(filename=logFilePath, format='%(message)s', level=logging.DEBUG)
+        messageFormat = 'timestamp$$%s~~errorlevel$$%s~~module$$%s~~message$$%s'
         
-
+        utcTimestamp = calendar.timegm(datetime.datetime.utcnow().utctimetuple())
         
         message = message.replace('\n', '->')
         if (errorLevel == logging.CRITICAL):
-            logging.critical(messageFormat, errorLevel, moduleName, message)
+            logging.critical(messageFormat, utcTimestamp, errorLevel, moduleName, message)
         elif (errorLevel == logging.ERROR):
-            logging.error(messageFormat, errorLevel, moduleName, message)
+            logging.error(messageFormat, utcTimestamp, errorLevel, moduleName, message)
         elif (errorLevel == logging.WARNING):
-            logging.warning(messageFormat, errorLevel, moduleName, message)
+            logging.warning(messageFormat, utcTimestamp, errorLevel, moduleName, message)
         elif (errorLevel == logging.INFO):
-            logging.info(messageFormat, errorLevel, moduleName, message)
+            logging.info(messageFormat, utcTimestamp, errorLevel, moduleName, message)
         elif (errorLevel == logging.DEBUG):
-            logging.debug(messageFormat, errorLevel, moduleName, message)
+            logging.debug(messageFormat, utcTimestamp, errorLevel, moduleName, message)
             
     printDebug('========================================================')
     printDebug('Error level:' + str(errorLevel))
