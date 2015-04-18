@@ -30,8 +30,8 @@
     <software-default-directory>/boot/analoc/wifly_scripts</software-default-directory>
     <version-number>1</version-number>
     
-    <server-url-send-data>https://wifinder2.azurewebsites.net/v1/sensors/{0}</server-url-send-data>
-    <server-url-send-errors>https://wifinder2.azurewebsites.net/v1/sensors/{0}/errors</server-url-send-errors>
+    <server-url-send-data>https://wifinder2.azurewebsites.net/data/v1/sensors/{0}</server-url-send-data>
+    <server-url-send-errors>https://wifinder2.azurewebsites.net/data/v1/sensors/{0}/errors</server-url-send-errors>
     
     <kismet-wifly-directory>/var/analoc/kismet</kismet-wifly-directory>
     <kismet-logs-directory>kismet_logs</kismet-logs-directory>

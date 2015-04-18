@@ -306,7 +306,7 @@ def main():
                                 dClientData['mac'] = clientMacAddress
                                 dClientData['bssid'] = bssid
                                 dClientData['power'] = lastSignleDbm
-                                dClientData['timestamp'] = calendar.timegm(lastTimeSeen.utctimetuple())
+                                dClientData['timestamp'] = calendar.timegm(lastTimeSeenDateObject.utctimetuple())
                                 lstData.append(dClientData)
                     
                     # Checks if we need to send new data
